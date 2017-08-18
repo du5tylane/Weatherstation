@@ -1,0 +1,7 @@
+*key.txt
+*.key
+*/accounts/*
+*.log
+.git*
+*.pem
+*.crt
