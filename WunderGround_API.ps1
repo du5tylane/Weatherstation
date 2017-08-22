@@ -50,8 +50,8 @@ if (!(Test-Path $fileSweet))
 }
 
 # update the files if they are older than x minutes
-if (((get-date) - $lastWrite) -gt $timespan) {
-
+if (((get-date) - $lastWrite) -gt $timespan) 
+{
     Invoke-RestMethod -Uri $KIDSURL -Method get -OutFile $fileSweet
     Invoke-RestMethod -Uri $KIDHURL -Method get -OutFile $filePineGap
 }
